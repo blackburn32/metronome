@@ -7,7 +7,7 @@
     "daisyui": "^2.46.0",
     "gh-pages": "^5.0.0",
     "happy-dom": "^9.1.9",
-    "nuxt": "^3.3.3",
+    "nuxt": "^3.4.1",
     "nuxt-icon": "^0.3.3",
     "standardized-audio-context-mock": "^9.6.15",
     "vite": "^4.2.1",

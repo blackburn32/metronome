@@ -1,8 +1,6 @@
 <template>
     <div class="flex flex-col w-screen h-screen justify-center items-center" data-theme="dark">
-        <ClientOnly>
-            <Metronome/>
-        </ClientOnly>
+        <Metronome/>
     </div>
 </template>
 <script setup lang="ts">
