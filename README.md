@@ -2,6 +2,8 @@
 
 This is a simple metronome application built with Nuxt 3 and Tailwind CSS.
 
+Try it out [here.](https://blackburn32.github.io/metronome/)
+
 ## Setup
 
 Install the dependencies:
