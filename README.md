@@ -12,7 +12,7 @@ npm install
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`
+Start the development server on `http://localhost:3000/metronome`
 
 ```bash
 npm run dev
@@ -20,6 +20,17 @@ npm run dev
 
 ## Test
 
+Tests are implemented using Vitest
+
 ```bash
 npm run test
+```
+
+## Deploy
+
+Deploy to GitHub Pages
+
+```bash
+npm run generate
+npm run deploy
 ```

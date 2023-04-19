@@ -21,6 +21,6 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "test": "vitest",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -a -d dist"
   }
 }
