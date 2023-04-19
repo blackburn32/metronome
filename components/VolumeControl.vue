@@ -54,7 +54,7 @@
 <script lang="ts" setup>
 import {ref, watch} from 'vue';
 
-const volume = ref(0);
+const volume = ref(0.5);
 
 const emits = defineEmits({
     updateVolume: (value: number) => true,

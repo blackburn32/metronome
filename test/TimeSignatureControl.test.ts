@@ -1,5 +1,5 @@
 import {describe, expect, it} from 'vitest';
-import {DOMWrapper, mount} from '@vue/test-utils';
+import {mount} from '@vue/test-utils';
 import TimeSignatureControl from '../components/TimeSignatureControl.vue';
 
 describe('BeatControl.vue', () => {
@@ -7,7 +7,7 @@ describe('BeatControl.vue', () => {
         const wrapper = mount(TimeSignatureControl);
         const beatsPerMeasure = wrapper.find<HTMLInputElement>('#beats-per-measure');
         const beatValue = wrapper.find('#beat-value');
-
+        
         expect(beatsPerMeasure.element.value).toBe('4');
         expect(beatValue.text()).toBe('4');
     });

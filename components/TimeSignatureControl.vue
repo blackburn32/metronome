@@ -50,7 +50,7 @@
 </template>
 
 <script lang="ts" setup>
-import {ref, watch, onMounted} from 'vue';
+import {onMounted, ref, watch} from 'vue';
 
 const beatsPerMeasure = ref<number>(4);
 const increaseBeatsPerMeasure = () => {

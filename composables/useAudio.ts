@@ -4,8 +4,8 @@ import {IAudioContext} from 'standardized-audio-context';
 export default function useAudio() {
     const audioContext: Ref<IAudioContext> = ref(new AudioContext());
     const outputNode = audioContext.value.createGain();
-    const mainVolume = ref(0);
-    outputNode.gain.value = 0;
+    const mainVolume = ref(0.5);
+    outputNode.gain.value = mainVolume.value;
     outputNode.connect(audioContext.value.destination);
     
     const updateVolume = () => {

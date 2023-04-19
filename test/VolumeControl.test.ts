@@ -6,27 +6,27 @@ describe('VolumeControl.vue', () => {
     it('renders the correct initial volume', () => {
         const wrapper = mount(VolumeControl);
         const volumeInput = wrapper.find<HTMLInputElement>('input[type="range"]');
-        expect(volumeInput.element.value).toBe('0');
+        expect(volumeInput.element.value).toBe('0.5');
     });
     
     it('updates volume when the slider is moved', async () => {
         const wrapper = mount(VolumeControl);
         const volumeInput = wrapper.find<HTMLInputElement>('input[type="range"]');
         
-        await volumeInput.setValue(0.5);
+        await volumeInput.setValue(0.6);
         
-        expect(volumeInput.element.value).toBe('0.5');
+        expect(volumeInput.element.value).toBe('0.6');
     });
     
     it('emits updateVolume event when the volume is updated', async () => {
         const wrapper = mount(VolumeControl);
         const volumeInput = wrapper.find('input[type="range"]');
         
-        await volumeInput.setValue(0.5);
+        await volumeInput.setValue(0.6);
         
         
         expect(wrapper.emitted('updateVolume')).toBeTruthy();
-        expect(wrapper.emitted('updateVolume')![0]).toEqual(['0.5']);
+        expect(wrapper.emitted('updateVolume')![0]).toEqual(['0.6']);
     });
     
     it('sets volume to 0 when volume-off icon is clicked', async () => {
